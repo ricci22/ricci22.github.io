@@ -1,6 +1,43 @@
+/* box-sizing reset method */
+html {
+  /* vendor prefixes for Safari (< 5.1), Chrome (< 10), and Firefox (< 29) */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.parent-box {
+  width: 50%;
+  border: 5px solid rgba(37, 34, 197, 0.479);
+  float: left
+}
+
+.child-box {
+  width: 90%;
+  padding: 20%;
+  border: 4px solid black;
+  margin: .5em auto;
+}
+
+.twins-box {
+  width: 50%;
+  padding: 1em;
+  border: 4px solid black;
+  float: left;
+}
+
 h1 {
   font-family: 'Tangerine', cursive;
   font-size: 48px;
   text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+}
+
+p {
   text-align: center;
 }
